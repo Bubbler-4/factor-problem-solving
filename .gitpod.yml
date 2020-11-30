@@ -1,3 +1,3 @@
 image: bubbler9903/factor-gitpod:latest
 tasks:
-  - init: "cp .factor-rc ~/"
+  - command: "cp .factor-rc ~/"
