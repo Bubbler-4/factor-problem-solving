@@ -1,4 +1,4 @@
-! Copyright (C) 2020 Your name.
+! Copyright (C) 2020 Bubbler.
 ! See http://factorcode.org/license.txt for BSD license.
 USING: io io.encodings.utf8 io.files kernel sequences ;
 IN: rosalind.rna
