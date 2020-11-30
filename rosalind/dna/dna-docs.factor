@@ -6,9 +6,12 @@ IN: rosalind.dna
 HELP: dna
 { $values
     { "str" "A DNA string" }
-    { "counts" "A string representing how many times each of A, C, G, and T occurs in str" }
+    { "counts" "A string representing nucleotide counts" }
 }
-{ $description "Solves the problem " { $snippet "DNA" } " on Rosalind." } ;
+{ $description "Solves the problem DNA on Rosalind: count how many times each nucleotide A, C, G, and T appears in the input DNA string." } ;
+
+HELP: dna-main
+{ $description "Solves the problem DNA on Rosalind, using a real dataset." } ;
 
 ARTICLE: "rosalind.dna" "rosalind.dna"
 { $vocab-link "rosalind.dna" }
