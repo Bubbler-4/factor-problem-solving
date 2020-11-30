@@ -2,9 +2,11 @@
 
 Solutions to various problems written in Factor
 
-## How to add a solution (Gitpod)
+## How to add a solution
 
-* Run `factor` in terminal, then enter:
+* Add `AUTHOR` environment variable set as your name/username. (On Gitpod, you can do this in account settings.)
+* In non-Gitpod setting, copy the code in `.factor-rc` into your own.
+* Run `factor` in terminal at the git repo root, then enter:
     ```
     USE: tools.scaffold
     "." "problem-site.problem-code" scaffold-vocab

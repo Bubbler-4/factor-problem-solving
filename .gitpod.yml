@@ -1,3 +1,3 @@
 image: bubbler9903/factor-gitpod:latest
 tasks:
-  - init: "printf \"USING: parser vocabs.loader sequences namespaces tools.scaffold environment ; auto-use vocab-roots [ \\\".\\\" suffix ] change \\\"AUTHOR\\\" os-env developer-name set-global\" > ~/.factor-rc"
+  - init: "cp .factor-rc ~/"
