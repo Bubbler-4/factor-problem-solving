@@ -3,7 +3,7 @@
 USING: help.markup help.syntax kernel sequences ;
 IN: aoc2020.day1
 
-HELP: day1-gold
+HELP: day1-silver
 { $values
     { "seq" "A sequence of integers" }
     { "prod" "The answer" }
@@ -13,7 +13,7 @@ HELP: day1-gold
 HELP: day1-main
 { $description "Solves both parts of Day 1 of AoC2020, using a real dataset." } ;
 
-HELP: day1-silver
+HELP: day1-gold
 { $values
     { "seq" "A sequence of integers" }
     { "prod" "The answer" }
