@@ -1,6 +1,6 @@
 ! Copyright (C) 2020 Bubbler.
 ! See http://factorcode.org/license.txt for BSD license.
-USING: multiline rosalind.cons tools.test ;
+USING: multiline rosalind.common rosalind.cons tools.test ;
 IN: rosalind.cons.tests
 
 STRING: fasta-example

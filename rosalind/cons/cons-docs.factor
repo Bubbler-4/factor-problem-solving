@@ -15,13 +15,6 @@ HELP: cons
 HELP: cons-main
 { $description "Solves the problem CONS on Rosalind, using a real dataset." } ;
 
-HELP: fasta>assoc
-{ $values
-    { "str" string }
-    { "assoc" assoc }
-}
-{ $description "" } ;
-
 ARTICLE: "rosalind.cons" "rosalind.cons"
 { $vocab-link "rosalind.cons" }
 ;

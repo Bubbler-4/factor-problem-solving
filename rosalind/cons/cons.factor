@@ -2,12 +2,8 @@
 ! See http://factorcode.org/license.txt for BSD license.
 USING: arrays assocs io io.encodings.utf8 io.files kernel math
 math.parser math.statistics prettyprint sequences sorting
-splitting strings ;
+splitting strings rosalind.common ;
 IN: rosalind.cons
-
-: fasta>assoc ( str -- assoc )
-  ">" split [ "\n" split harvest ] map harvest
-  [ [ first ] [ rest concat ] bi 2array ] map ;
 
 : cons ( assoc -- histo consensus )
   values flip [ [ "ACGT" append histogram sort-keys values [ 1 - ] map ] map flip ]

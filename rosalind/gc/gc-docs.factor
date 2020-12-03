@@ -13,13 +13,6 @@ HELP: gc
 HELP: gc-main
 { $description "Solves the problem GC on Rosalind, using a real dataset." } ;
 
-HELP: fasta>assoc
-{ $values
-    { "str" string }
-    { "assoc" assoc }
-}
-{ $description "Parses a string in FASTA format and returns an assoc of ID - content pairs." } ;
-
 ARTICLE: "rosalind.gc" "rosalind.gc"
 { $vocab-link "rosalind.gc" }
 ;

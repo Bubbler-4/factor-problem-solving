@@ -1,6 +1,6 @@
 ! Copyright (C) 2020 Bubbler.
 ! See http://factorcode.org/license.txt for BSD license.
-USING: kernel math.functions multiline rosalind.gc sequences
+USING: kernel math.functions multiline rosalind.common rosalind.gc sequences
 tools.test ;
 IN: rosalind.gc.tests
 
