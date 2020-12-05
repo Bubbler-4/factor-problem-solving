@@ -13,13 +13,6 @@ HELP: prot
 HELP: prot-main
 { $description "Solves the problem PROT on Rosalind, using a real dataset." } ;
 
-HELP: rna3>amino
-{ $values
-    { "rna3" "An RNA string of length 3" }
-    { "amino" "A character in amino acid alphabet, or a dot" }
-}
-{ $description "Translates a single codon (a sequence of three RNA nucleotides) into an amino acid. Returns a dot if the input represents a stop codon." } ;
-
 ARTICLE: "rosalind.prot" "rosalind.prot"
 { $vocab-link "rosalind.prot" }
 ;
