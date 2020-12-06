@@ -23,6 +23,20 @@ HELP: rna3>amino
 }
 { $description "Translates a single codon (a sequence of three RNA nucleotides) into an amino acid. Returns a dot if the input represents a stop codon." } ;
 
+HELP: rna>protein
+{ $values
+    { "rna" "An RNA string starting with AUG" }
+    { "protein/f" "A protein string, or f" }
+}
+{ $description "Translates an RNA string into a protein string, discarding anything that appears after a stop codon. Returns f if the RNA does not start with the start codon AUG, or a stop codon is not found." } ;
+
+HELP: reverse-complement
+{ $values
+    { "dna" "A DNA string" }
+    { "dna'" "A DNA string" }
+}
+{ $description "Computes the reverse complement of a DNA string, which represents the opposite strand." } ;
+
 ARTICLE: "rosalind.common" "rosalind.common"
 { $vocab-link "rosalind.common" }
 ;
