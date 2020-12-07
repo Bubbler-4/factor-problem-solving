@@ -1,8 +1,7 @@
 ! Copyright (C) 2020 Bubbler.
 ! See http://factorcode.org/license.txt for BSD license.
-USING: assocs combinators io.encodings.utf8 io.files kernel
-math.order math.parser math.vectors prettyprint regexp sequences
-sequences.generalizations sets splitting ;
+USING: assocs io.encodings.utf8 io.files kernel math.order
+math.parser prettyprint regexp sequences sets splitting ;
 IN: aoc2020.day4
 
 : day4-silver ( assocs -- count )
@@ -19,8 +18,8 @@ IN: aoc2020.day4
 : day4-gold ( assocs -- count )
   [ keys { "byr" "iyr" "eyr" "hgt" "hcl" "ecl" "pid" } swap subset? ] filter
   [ { "byr" "iyr" "eyr" "hgt" "hcl" "ecl" "pid" } swap substitute
-    7 firstn { [ valid-byr? ] [ valid-iyr? ] [ valid-eyr? ] [ valid-hgt? ] [ valid-hcl? ] [ valid-ecl? ] [ valid-pid? ] } spread
-    7 narray vall?
+    { [ valid-byr? ] [ valid-iyr? ] [ valid-eyr? ] [ valid-hgt? ] [ valid-hcl? ] [ valid-ecl? ] [ valid-pid? ] }
+    [ call( elt -- ? ) ] 2all?
   ] count ;
 
 : day4-main ( -- ) "datasets/aoc2020/day4.txt" utf8 file-contents
