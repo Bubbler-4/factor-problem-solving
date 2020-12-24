@@ -14,4 +14,4 @@ Solutions to various problems written in Factor
     "problem-site.problem-code" scaffold-docs
     ```
 * See `rosalind.dna` for an example. If a solution is worth an explanation, it should go to the description in the docs.
-* By convention, the `MAIN:` function solves the exact task given, while the core function solves a generalized problem.
+* By convention, the `MAIN:` function solves the exact task given, while the core function solves the core problem (no input parsing, no output formatting). Sometimes it solves a more generalized problem; sometimes it solves only a specific subset of the problem (which happens in AoC problems, when an input exploit is needed).
