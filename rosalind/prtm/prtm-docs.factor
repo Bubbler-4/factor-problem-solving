@@ -3,12 +3,6 @@
 USING: help.markup help.syntax kernel ;
 IN: rosalind.prtm
 
-HELP: mass-table
-{ $values
-    { "value" "An assoc between amino acids and their respective weights" }
-}
-{ $description "The mass table of amino acids, which maps a character to a floating-point value." } ;
-
 HELP: prtm
 { $values
     { "protein" "A protein string" }

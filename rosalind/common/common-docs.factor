@@ -16,6 +16,12 @@ HELP: amino-table
 }
 { $description "A length-64 string that can be used for translation from RNA to amino acid. Each letter denotes an amino acid, and a period indicates a stop codon. The indexing is done by converting UCAG to 0,1,2,3 respectively and interpreting as base 4, highest digit first." } ;
 
+HELP: protein-mass-table
+{ $values
+    { "value" assoc }
+}
+{ $description "A mapping between the character representation of each amino acid and its monoisotopic mass." } ;
+
 HELP: rna3>amino
 { $values
     { "rna3" "An RNA string of length 3" }
