@@ -1,10 +1,8 @@
 ! Copyright (C) 2021 Bubbler.
 ! See http://factorcode.org/license.txt for BSD license.
-USING: accessors assocs formatting io io.directories
-io.encodings.utf8 io.files io.launcher kernel math.matrices
-multiline prettyprint sequences splitting
-tools.profiler.sampling tools.scaffold tools.test tools.time
-vocabs.loader ;
+USING: assocs formatting io io.directories kernel multiline
+sequences splitting tools.profiler.sampling tools.scaffold
+tools.test tools.time vocabs.loader ;
 IN: tools.problem-solving
 
 STRING: body-with-dataset-template
@@ -71,11 +69,14 @@ MAIN: %s-main
   [ [ "." ] dip scaffold-vocab ]
   [ aoc-body ] [ touch-dataset-file ] tri ;
 
-: ps-rerun ( vocab-name -- vocab-name )
-  dup reload dup run ;
-
 : ps-reload ( vocab-name -- vocab-name )
   dup reload ;
+
+: ps-run ( vocab-name -- vocab-name )
+  dup run ;
+
+: ps-rerun ( vocab-name -- vocab-name )
+  ps-reload ps-run ;
 
 : ps-time ( vocab-name -- vocab-name )
   dup reload [ dup run ] time ;
